@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #AAF, #FAF) no-repeat;
+    /*animation: backgrounda 30s linear infinite;*/
+}
+
+.container {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 10px 0 0 0;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #98D;
+    border-radius: 5px;
+    background: #FFF;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: 0 5px 5px #DDF;
+    color: #98D;
+    font: 1.1em sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:hover,
+.btn:focus {
+    background: #EEF;
+}
+.btn:active {
+    background: #EDF;
+}
+
+.btn.active {
+    border: 1px solid #FFF;
+    background: #98D;
+    color: #FFF;
+}
+.btn.active:hover,
+.btn.active:focus {
+    background: #A9E;
+}
+.btn.active:active {
+    background: #98D;
+}
+
+table {
+    width: 70%;
+    display: none;
+    margin: 10px auto;
+}
+table.active {
+    display: table;
+}
+th {
+    border: 2px solid #65A;
+}
+table, th, td {
+    border-radius: 10px;
+}
+th, td {
+    width: 50%;
+    padding: 20px;
+    background: #FFF;
+    color: #65A;
+    font-family: sans-serif;
+}
+tr:nth-child(even) td {
+    background-color: #EEF;
+}
+
+@keyframes backgrounda {
+    0% { background: #8CE8A0; }
+    20% { background: #9BC1D4; }
+    40% { background: #FFFB9A; }
+    60% { background: #E8B880; }
+    80% { background: #FF8DA2; }
+    100% { background: #8CE8A0; }
+}
